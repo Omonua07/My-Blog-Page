@@ -1,6 +1,10 @@
 /* General Styles */
 :root {
-    --primary-color : #1A205E;
+    --primary-color: #1A205E;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .flex {
@@ -61,6 +65,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .post:hover {
@@ -199,12 +204,17 @@ footer p {
 
 .comments-container {
     color: var(--primary-color);
-    background-color: rgb(204, 204, 204, 0.25);
+    background-color: rgb(240, 240, 240);
     padding-inline: 23px;
     border: 2px solid #fff;
     border-radius: 25px 25px 0 0;
-    box-shadow: 4px -4px 4px 
-    rgba(204, 204, 204, 0.25);
+    box-shadow: 4px -4px 4px rgba(204, 204, 204, 0.25);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 30px);
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .blog-metadata {
