@@ -13,6 +13,10 @@ textarea {
     outline: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -214,7 +218,8 @@ footer p {
     padding-inline: 23px;
     border: 2px solid #fff;
     border-radius: 25px 25px 0 0;
-    box-shadow: 4px -4px 4px rgba(204, 204, 204, 0.25);
+    box-shadow: 4px -4px 4px 
+    rgba(204, 204, 204, 0.25);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -307,5 +312,4 @@ footer p {
 .comment-box-container button {
     justify-content: center;
     font-size: 1.5em;
-    background-color: transparent;
 }
