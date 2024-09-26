@@ -239,7 +239,15 @@ footer p {
 
 .expand-box {
     margin-left: auto;
-    transition: background-color 200ms;
+    transition: background-color 200ms, transform 200ms;
+}
+
+.expand-box > svg {
+    pointer-events: none;
+}
+
+.expand-box.comments-section-opened {
+    transform: rotate(180deg);
 }
 
 .hoverable {
@@ -312,4 +320,18 @@ footer p {
 .comment-box-container button {
     justify-content: center;
     font-size: 1.5em;
+}
+
+.collapsible-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms;
+}
+
+.collapsible-wrapper .wrapper2 {
+    overflow: hidden;
+}
+
+.collapsible-wrapper.show {
+    grid-template-rows: 1fr;
 }
