@@ -1,6 +1,16 @@
 /* General Styles */
 :root {
-    --primary-color : #1A205E;
+    --primary-color: #1A205E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+textarea {
+    border: none;
+    outline: none;
 }
 
 * {
@@ -253,7 +263,7 @@ footer p {
 }
 
 .user-profile-pic {
-    width: 40px;
+    width: 30px;
     aspect-ratio: 1;
     border: 0.5px solid var(--primary-color);
     border-radius: 50%;
@@ -282,17 +292,24 @@ footer p {
     gap: 2px;
 }
 
-.fourth-row {
-width: 100%;
+.comment-box-container {
+    box-sizing: content-box;
+    padding-inline: 1.5%;
+    margin-block: 20px 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    gap: 10px;
 }
 
-.fourth-row .com-box {
-    margin-block: 3%;
-    border-radius: 25px;
-    width: 100%;
-    height: 42px;
-    padding: 10px;
-    font-size: 1em;
-    outline: none;
-    background-color: transparent;
+.comment-box-container textarea {
+    flex-grow: 1;
+    resize: none;
+    font-family: inherit;
+    height: 3em;
+    padding-block: 10px;
+}
+
+.comment-box-container button {
+    justify-content: center;
+    font-size: 1.5em;
 }
